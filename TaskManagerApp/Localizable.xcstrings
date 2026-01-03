@@ -58,7 +58,14 @@
       }
     },
     "Home" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Regresar"
+          }
+        }
+      }
     },
     "Insert Name of Group" : {
       "localizations" : {
@@ -111,7 +118,14 @@
       }
     },
     "select the working profile" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "seleccionar perfil"
+          }
+        }
+      }
     },
     "Task Progress" : {
       "localizations" : {
