@@ -33,6 +33,7 @@ struct TaskGroupDetailView: View {
                             }
                         TextField("Task Title", text: $task.title)
                             .strikethrough(task.isCompleted)
+                            .accessibilityIdentifier("TaskTitleText \(task) ")
                         
                     }
                 }

@@ -23,6 +23,7 @@ struct ContentView: View {
                 VStack{
                     Text("select the working profile")
                         .font(.largeTitle.bold())
+                        .accessibilityIdentifier("ProfileSelectionTitle")
                     LazyVGrid(columns: columns, spacing: 20) {
                         ForEach($profiles) { $profile in
                             NavigationLink(value: profile) {
@@ -35,6 +36,7 @@ struct ContentView: View {
                                     Text(profile.name)
                                 }
                             }
+                            .accessibilityIdentifier("ProfileSelectionLink \(profile) ")
                         }
                     }
                 }

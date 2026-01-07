@@ -21,6 +21,7 @@ struct DashboardView: View {
                     NavigationLink(value: group) {
                         Label(group.title, systemImage: group.symbolName)
                     }
+                    .accessibilityIdentifier("TaskGroupSelectionLink \(group) ")
                 }
             }
             .navigationTitle(profile.name)

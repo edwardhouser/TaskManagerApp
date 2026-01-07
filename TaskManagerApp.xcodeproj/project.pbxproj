@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		5493A09C2F0E0171006C0BFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 546FCDC92EE911E800068677 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 546FCDD02EE911E800068677;
+			remoteInfo = TaskManagerApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		546FCDD12EE911E800068677 /* TaskManagerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskManagerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5493A0962F0E0170006C0BFE /* TaskManagerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskManagerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +27,22 @@
 			path = TaskManagerApp;
 			sourceTree = "<group>";
 		};
+		5493A0972F0E0170006C0BFE /* TaskManagerAppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = TaskManagerAppUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		546FCDCE2EE911E800068677 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5493A0932F0E0170006C0BFE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				546FCDD32EE911E800068677 /* TaskManagerApp */,
+				5493A0972F0E0170006C0BFE /* TaskManagerAppUITests */,
 				546FCDD22EE911E800068677 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				546FCDD12EE911E800068677 /* TaskManagerApp.app */,
+				5493A0962F0E0170006C0BFE /* TaskManagerAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +95,29 @@
 			productReference = 546FCDD12EE911E800068677 /* TaskManagerApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5493A0952F0E0170006C0BFE /* TaskManagerAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5493A09E2F0E0171006C0BFE /* Build configuration list for PBXNativeTarget "TaskManagerAppUITests" */;
+			buildPhases = (
+				5493A0922F0E0170006C0BFE /* Sources */,
+				5493A0932F0E0170006C0BFE /* Frameworks */,
+				5493A0942F0E0170006C0BFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5493A09D2F0E0171006C0BFE /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				5493A0972F0E0170006C0BFE /* TaskManagerAppUITests */,
+			);
+			name = TaskManagerAppUITests;
+			packageProductDependencies = (
+			);
+			productName = TaskManagerAppUITests;
+			productReference = 5493A0962F0E0170006C0BFE /* TaskManagerAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +130,10 @@
 				TargetAttributes = {
 					546FCDD02EE911E800068677 = {
 						CreatedOnToolsVersion = 16.4;
+					};
+					5493A0952F0E0170006C0BFE = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 546FCDD02EE911E800068677;
 					};
 				};
 			};
@@ -101,12 +153,20 @@
 			projectRoot = "";
 			targets = (
 				546FCDD02EE911E800068677 /* TaskManagerApp */,
+				5493A0952F0E0170006C0BFE /* TaskManagerAppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		546FCDCF2EE911E800068677 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5493A0942F0E0170006C0BFE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -123,7 +183,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5493A0922F0E0170006C0BFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5493A09D2F0E0171006C0BFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 546FCDD02EE911E800068677 /* TaskManagerApp */;
+			targetProxy = 5493A09C2F0E0171006C0BFE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		546FCDDA2EE911EC00068677 /* Debug */ = {
@@ -305,6 +380,40 @@
 			};
 			name = Release;
 		};
+		5493A09F2F0E0171006C0BFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5D8CHW8W5H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.app.TaskManagerAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TaskManagerApp;
+			};
+			name = Debug;
+		};
+		5493A0A02F0E0171006C0BFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5D8CHW8W5H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.app.TaskManagerAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TaskManagerApp;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -322,6 +431,15 @@
 			buildConfigurations = (
 				546FCDDD2EE911EC00068677 /* Debug */,
 				546FCDDE2EE911EC00068677 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5493A09E2F0E0171006C0BFE /* Build configuration list for PBXNativeTarget "TaskManagerAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5493A09F2F0E0171006C0BFE /* Debug */,
+				5493A0A02F0E0171006C0BFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
